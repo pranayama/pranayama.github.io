@@ -1,0 +1,56 @@
+{
+  "name": "pranayama",
+  "icons": [
+    {
+      "src": "\/pranayama.png",
+      "sizes": "36x36",
+      "type": "image\/png"
+    },
+    {
+      "src": "\/pranayama.png",
+      "sizes": "48x48",
+      "type": "image\/png"
+    },
+    {
+      "src": "\/pranayama.png",
+      "sizes": "72x72",
+      "type": "image\/png"
+    },
+    {
+      "src": "\/pranayama.png",
+      "sizes": "96x96",
+      "type": "image\/png"
+    },
+    {
+      "src": "\/pranayama.png",
+      "sizes": "144x144",
+      "type": "image\/png"
+    },
+    {
+      "src": "\/pranayama.png",
+      "sizes": "192x192",
+      "type": "image\/png"
+    },
+    {
+      "src": "\/pranayama.png",
+      "sizes": "256x256",
+      "type": "image\/png",
+      "density": "5"
+    },
+    {
+      "src": "\/pranayama.png",
+      "sizes": "384x384",
+      "type": "image\/png"
+    },
+    {
+      "src": "\/pranayama.png",
+      "sizes": "512x512",
+      "type": "image\/png"
+    }
+  ],
+  "theme_color": "black",
+  "background_color": "black",
+  "display": "fullscreen",
+  "start_url": "/",
+  "short_name": "pranayama"
+}

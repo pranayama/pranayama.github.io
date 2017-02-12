@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>pranayama</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./pranayama.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="pranayama.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="/manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
+</head>
+<body>
+    <audio loop="loop" autoplay="autoplay" visibility="hidden">
+     <source src="rain.ogg" />
+     <source src="rain.mp3" />
+    </audio>
+    <div class="wrapper">
+        <div class="circle blue"></div>
+        <div class="circle green"></div>
+        <div class="circle green"></div>
+        <div class="circle green"></div>
+        <div class="circle blue"></div>
+        <div class="circle blue"></div>
+        <div class="circle blue"></div>
+        <div class="circle blue"></div>
+    </div>
+</body>
+</html>
