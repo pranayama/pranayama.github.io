@@ -34,10 +34,32 @@
     </script>
 </head>
 <body>
-    <audio loop="loop" autoplay="autoplay" visibility="hidden">
+    <audio id="rain" loop="loop" autoplay="autoplay" preload="auto">
      <source src="rain.ogg" />
      <source src="rain.mp3" />
     </audio>
+    <script>
+        (function () {
+            var rain = document.getElementById('rain');
+            // Browsers block autoplay of audio with sound until a user gesture.
+            // Try immediately; if blocked, start on the first interaction.
+            function start() {
+                var p = rain.play();
+                if (p && p.then) { p.catch(function () {}); }
+            }
+            start();
+            ['pointerdown', 'keydown', 'touchstart'].forEach(function (evt) {
+                document.addEventListener(evt, function once() {
+                    start();
+                    if (!rain.paused) {
+                        ['pointerdown', 'keydown', 'touchstart'].forEach(function (e) {
+                            document.removeEventListener(e, once);
+                        });
+                    }
+                });
+            });
+        })();
+    </script>
     <div class="wrapper">
         <div class="circle blue"></div>
         <div class="circle green"></div>
